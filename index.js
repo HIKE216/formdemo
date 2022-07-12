@@ -6,21 +6,21 @@ let products=[
         tag:1,
         price:2500,
         inCart:0,
-        img:"Pictures/Bracelets/1.jpg"
+        img:"1.jpg"
     },
     {
         name:"starSL-necklaces",
         tag:2,
         price:2500,
         inCart:0,
-        img:"Pictures/Bracelets/2.jpg"
+        img:"2.jpg"
     },
     {
         name:"normal",
         tag:3,
         price:2500,
         inCart:0,
-        img:"Pictures/Bracelets/3.jpg"
+        img:"3.jpg"
     }
 ]
 let carts=document.querySelectorAll(".add-cart");
@@ -89,7 +89,7 @@ if(cartItems&&productContainer){
         <div id="${item.tag}" class= "things">
         <div class="products">
         <button class="food" onclick="window.clear('${item.name}')"><ion-icon name="close-circle"></ion-icon></button>
-        <img src="/Pictures/Bracelets/${item.tag}.jpg">
+        <img src="/${item.tag}.jpg">
         <span>${item.name}</span></div>
         <div class="price">${item.price}</div>
         <div class="quantity">
