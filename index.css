@@ -1,0 +1,118 @@
+;body{
+    margin: 0;
+    padding: 0;
+}nav{
+    background-color: rgb(40, 40, 105);
+    overflow:hidden;
+    padding: 38px
+}
+#logo{
+    position: absolute;
+    width: 75px;
+    margin-top: 1px;
+    margin-left: 10px;
+}ul{
+    padding: 0;
+    margin: 0 0 0 150px;
+    list-style: none;
+}li{
+    
+    float:right;
+}
+li a{
+    text-decoration: none;
+    width: 100%;
+    padding: 20px 15px;
+    color: gold;
+}.shop{
+object-fit:cover;
+    width: 100%;
+    height: 250px;
+}.cont{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}.cont2{
+    display: flex;
+    flex-wrap: wrap;}
+.ring{
+    width:150px;
+    position: relative;
+    margin: 10px;
+}.box{
+    margin: 10px;
+    height: 150px;
+    width:150px;
+    position: relative;
+}
+/*........................cart..................*/
+.product-header{
+    width:100%;
+    display:inline-flex;
+    padding-top:10px;
+    
+}.product-title{
+    width:100%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+}.price-title{
+    width:100%;
+    border-bottom:1px solid lightgray;
+    display: flex;
+}.quantity-title{
+    width:100%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+}.total-title{
+    width:100%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+}.cart-cont{
+    width:620px;
+    
+    
+}.cart-cont ion-icon{
+    color: royalblue;
+}.products{
+    width: 100%;
+    display:flex;
+    border-bottom: 1px solid lightgray;
+}.products img{
+    width: 75px;
+display: flex;
+border-bottom: 1px solid lightgray;
+}.price{
+    width:100%;
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    align-items: center;
+}.quantity{
+    width:100%;
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    align-items: center;
+}
+.total{
+    width:100%;
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    align-items: center;
+}.produce{
+    border-bottom: 2px solid lightgray;
+}.things{
+    display: flex;
+    width: 100%;
+}.basketTotalContainer{
+    display: flex;
+    justify-content: flex-end;
+}
+/*...............................Form........................*/
+form{
+    display:flex;
+    flex-wrap: wrap;
+    ;
+}.fill{
+    background-color: lightblue;
+}.ordered{
+    width:75px
+}
