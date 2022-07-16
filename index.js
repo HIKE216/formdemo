@@ -230,7 +230,7 @@ function form(){let boo=[];
     let order=document.querySelector('.ordered');
     
     for(let i=0;i<beast.length;i++){
-  boo.push("https//hike216.github.io/formdemo/"+beast[i]+".jpg");
+  boo.push("https://hike216.github.io/formdemo/"+beast[i]+".jpg ");
     }order.value=boo;
     let cartItems=localStorage.getItem('productsInCart')
     cartItems=JSON.parse(cartItems);
