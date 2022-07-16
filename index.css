@@ -1,25 +1,26 @@
-;body{
+body{
     margin: 0;
     padding: 0;
 }nav{
     background-color: rgb(40, 40, 105);
     overflow:hidden;
-    padding: 38px
+    padding: 38px;
+    font-size: 20px;
 }
 #logo{
     position: absolute;
     width: 75px;
     margin-top: 1px;
     margin-left: 10px;
-}ul{
+} nav ul,.header ul{
     padding: 0;
     margin: 0 0 0 150px;
     list-style: none;
-}li{
+}nav ul li{
     
     float:right;
 }
-li a{
+nav ul li a{
     text-decoration: none;
     width: 100%;
     padding: 20px 15px;
@@ -115,4 +116,47 @@ form{
     background-color: lightblue;
 }.ordered{
     width:75px
+}
+.header{
+    background-color: mistyrose;
+    
+}.header ul li{
+    display: inline-block;
+    width: 25%;
+    padding: auto;
+    margin: 10px;
+    
+}
+.header ul li a{
+    text-decoration: none;
+    padding: 10px;
+    margin: 32px 0;
+color: black;
+font-family: sans-serif;
+font-size: 18px;
+    
+}.header ul li a:hover{
+    background:linear-gradient(to right, #ffff00 0%, #ff3399 100%);
+    border:none;
+    border-radius: 50px;
+transition: .1s ease-in-out;
+}
+.index{
+    background-image: url(./gold.jpg);
+    background-size: cover;
+    
+}.cont a img:hover{
+    border: 2px solid blue;
+}
+.quote{
+position: absolute;
+top:50%;
+left: 50%;
+transform: translate(-50%,-50%);
+color: white;
+font-family: sans-serif;
+width: 300px;
+font-size: 30px;
+}.quotebox{
+    position:relative
 }

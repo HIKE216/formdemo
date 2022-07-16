@@ -1,68 +1,24 @@
-
-var image=[];
 let products=[
     {
-        name:"SLnecklaces",
-        tag:1,
+        name:"SLnecklace",
+        tag:20,
         price:2500,
         inCart:0,
+        img:"Pictures/Bracelets/1.jpg"
     },
     {
-        name:"starSL-necklaces",
-        tag:2,
+        name:"starSL-necklaes",
+        tag:21,
         price:2500,
         inCart:0,
+        img:"Pictures/Bracelets/2.jpg"
     },
     {
-        name:"normal",
-        tag:3,
+        name:"ormal",
+        tag:22,
         price:2500,
         inCart:0,
-    },
-    {
-        tag:4,
-        price:2500,
-        inCart:0,
-    },
-    {
-        tag:5,
-        price:2500,
-        inCart:0,
-    },
-    {
-        tag:6,
-        price:2500,
-        inCart:0,
-    },
-    {
-        tag:7,
-        price:2500,
-        inCart:0,
-    },
-    {
-        tag:8,
-        price:2500,
-        inCart:0,
-    },
-    {
-        tag:9,
-        price:2500,
-        inCart:0,
-    },
-    {
-        tag:10,
-        price:2500,
-        inCart:0,
-    },
-    {
-        tag:11,
-        price:2500,
-        inCart:0,
-    },
-    {
-        tag:12,
-        price:2500,
-        inCart:0,
+        img:"Pictures/Bracelets/3.jpg"
     }
 ]
 let carts=document.querySelectorAll(".add-cart");
@@ -230,7 +186,7 @@ function form(){let boo=[];
     let order=document.querySelector('.ordered');
     
     for(let i=0;i<beast.length;i++){
-  boo.push("https//hike216.github.io/formdemo/"+beast[i]+".jpg");
+  boo.push("https"+beast[i]+".jpg");
     }order.value=boo;
     let cartItems=localStorage.getItem('productsInCart')
     cartItems=JSON.parse(cartItems);

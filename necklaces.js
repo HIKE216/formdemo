@@ -1,66 +1,108 @@
-
-var image=[];
 let products=[
     {
-        name:"SLnecklaces",
-        tag:1,
+        tag:1000,
         price:2500,
         inCart:0,
     },
     {
-        name:"starSL-necklaces",
-        tag:2,
+        tag:1001,
         price:2500,
         inCart:0,
     },
     {
-        name:"normal",
-        tag:3,
+        
+        tag:1002,
         price:2500,
         inCart:0,
     },
     {
-        tag:4,
+        
+        tag:1003,
         price:2500,
         inCart:0,
-    },
-    {
-        tag:5,
+    },{
+        
+        tag:1004,
         price:2500,
         inCart:0,
-    },
-    {
-        tag:6,
+    },{
+        
+        tag:1005,
         price:2500,
         inCart:0,
-    },
-    {
-        tag:7,
+    },{
+        
+        tag:1006,
         price:2500,
         inCart:0,
-    },
-    {
-        tag:8,
+    },{
+        
+        tag:1007,
         price:2500,
         inCart:0,
-    },
-    {
-        tag:9,
+    },{
+        
+        tag:1008,
         price:2500,
         inCart:0,
-    },
-    {
+    },{
+        
+        tag:1009,
+        price:2500,
+        inCart:0,
+    },{
+        
+        tag:1010,
+        price:2500,
+        inCart:0,
+    },{
+        
+        tag:1011,
+        price:2500,
+        inCart:0,
+    },{
+        
+        tag:1012,
+        price:2500,
+        inCart:0,
+    },{
+        
+        tag:1013,
+        price:2500,
+        inCart:0,
+    },{
+        
+        tag:1014,
+        price:2500,
+        inCart:0,
+    },{
+        
+        tag:1015,
+        price:2500,
+        inCart:0,
+    },{
+        
+        tag:1016,
+        price:2500,
+        inCart:0,
+    },{
+        
+        tag:1017,
+        price:2500,
+        inCart:0,
+    },{
+        
+        tag:1018,
+        price:2500,
+        inCart:0,
+    },{
+        
+        tag:1019,
+        price:2500,
+        inCart:0,
+    },{
+        
         tag:10,
-        price:2500,
-        inCart:0,
-    },
-    {
-        tag:11,
-        price:2500,
-        inCart:0,
-    },
-    {
-        tag:12,
         price:2500,
         inCart:0,
     }
@@ -230,7 +272,7 @@ function form(){let boo=[];
     let order=document.querySelector('.ordered');
     
     for(let i=0;i<beast.length;i++){
-  boo.push("https//hike216.github.io/formdemo/"+beast[i]+".jpg");
+  boo.push("https"+beast[i]+".jpg");
     }order.value=boo;
     let cartItems=localStorage.getItem('productsInCart')
     cartItems=JSON.parse(cartItems);
