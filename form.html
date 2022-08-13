@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="fill">
+    <img id="logo" src="./Daisy logo (2).png">
+        <nav>
+        <ul>
+            <li class="cart"><a href="cart.html"><ion-icon name="basket"></ion-icon> Cart<span>0</span></a></li>
+            <li><a href="#"> Contact</a></li>
+            <li><a href="#"> Shop</a></li>
+            <li><a href="#"> Home</a></li>
+        </ul>
+    </nav>
+    <form class="row g-3" action="https://formsubmit.co/7ab852625821dcad777545fd2c4c91a2" method="POST">
+        Name<input type="text" name="name">
+        Email <input type="text" name="email">
+        Phone no.<input type="number" name="number">
+        Delivery point<input type="text" name="Delivery point">
+        <div style="display: none;">Products ordered <textarea class="ordered" name="image" readonly></textarea></div>
+        <div style="display: none;">Quantity ordered<input type="text" name="quantity-ordered" class="order2" readonly></div>
+        Total Cost<input type="text" name="totalCost" class="totalCost" readonly>
+        <button type="submit">Send</button>
+    </form>
+    <script src="index.js">
+    </script>
+</body>
+</html>

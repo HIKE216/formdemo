@@ -1,0 +1,301 @@
+body{
+    margin: 0;
+    padding: 0;
+}nav{
+    background-color: rgb(40, 40, 105);
+    overflow:hidden;
+    padding: 38px;
+    font-size: 20px;
+}@media (max-width:767.98px){
+    nav{
+        padding: 10px;
+    }
+}
+#logo{
+    position: absolute;
+    width: 75px;
+    margin-top: 1px;
+    margin-left: 10px;
+}@media (max-width:767.98px){
+    #logo{
+        position: absolute;
+        width:30px;
+    }
+}
+ nav ul,.header ul{
+    padding: 0;
+    margin: 0 0 0 150px;
+    list-style: none;
+}
+@media (max-width:767.98px){
+    nav ul,.header ul{
+        padding: 0;
+        margin:0;
+        list-style: none;
+    }
+}
+nav ul li{
+    
+    float:right;
+}@media (max-width: 767.98px){
+    nav ul li {
+        align-self: flex-start;
+        
+    };
+}
+nav ul li a{
+    text-decoration: none;
+    width: 100%;
+    padding: 20px 15px;
+    color: gold;
+}@media (max-width: 767.98px){
+    nav ul li a{
+        font-size: 10px;
+        
+    };
+}
+.shop{
+object-fit:cover;
+    width: 100%;
+    height: 250px;
+}.cont{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}.cont2{
+    display: flex;
+    flex-wrap: wrap;}
+.ring{
+    width:150px;
+    position: relative;
+    margin: 10px;
+}.box{
+    margin: 10px;
+    height: 150px;
+    width:150px;
+    position: relative;
+}
+@media(max-width: 330px) {
+    .box{
+        width:130px
+    }
+}
+/*........................cart..................*/
+.product-header{
+    width:100%;
+    display:inline-flex;
+    padding-top:10px;
+    
+}.product-title{
+    padding-left: 15px;
+    width:100%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+}.price-title{
+    width:100%;
+    border-bottom:1px solid lightgray;
+    display: flex;
+}.quantity-title{
+    width:100%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+}.total-title{
+    width:100%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+}.cart-cont{
+    width:620px;
+    
+    
+}@media (max-width: 767.98px){
+    .cart-cont{
+        width:100%;
+        
+    };
+}
+.cart-cont ion-icon{
+    color: royalblue;
+}.products{
+    width: 100%;
+    display:flex;
+    border-bottom: 1px solid lightgray;
+}.products img{
+    width: 75px;
+display: flex;
+border-bottom: 1px solid lightgray;
+}@media (max-width: 767.98px){
+    .products img{
+        width:50px;
+        
+    }.product-header{
+        font-size: 10px;
+    }
+}.price{
+    width:100%;
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    align-items: center;
+    padding-left: 5rem;
+}@media(max-width:700.98px){
+    .price{
+        padding-left: 1rem;
+    }
+}
+.quantity{
+    width:100%;
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    align-items: center;
+}
+.total{
+    width:100%;
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    align-items: center;
+}.produce{
+    border-bottom: 2px solid lightgray;
+}.things{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}.basketTotalContainer{
+    display: flex;
+    justify-content: flex-end;
+}
+/*...............................Form........................*/
+form{
+    display:flex;
+    flex-wrap: wrap;
+    ;
+}.fill{
+    background-color: lightblue;
+}.ordered{
+    width:75px
+}
+.header{
+    background-color: mistyrose;
+    
+}@media (max-width: 767.98px){
+    .header{
+        overflow-y: hidden;
+        overflow-x: auto;
+        white-space: nowrap;
+    };
+}
+.header ul li{
+    display: inline-block;
+    width: 25%;
+    padding: auto;
+    margin: 10px;
+    
+}@media (max-width: 767.98px){
+    .header ul li{
+        width:10%;
+        padding: 0;
+        margin: 10px
+        
+    };
+}
+.header ul li a{
+    text-decoration: none;
+    padding: 10px;
+    margin: 32px 0;
+color: black;
+font-family: sans-serif;
+font-size: 18px;
+    
+}@media (max-width: 767.98px){
+    .header ul li a{
+        font-size: 10px;
+        padding: 0;
+        margin: 0;
+        
+    };
+}
+.header ul li a:hover{
+    background:linear-gradient(to right, #ffff00 0%, #ff3399 100%);
+    border:none;
+    border-radius: 50px;
+transition: .1s ease-in-out;
+}
+.index{
+    background-image: url(./gold.jpg);
+    width: 100%;
+    
+}.cont a img:hover{
+    border: 2px solid blue;
+}
+.quote{
+position: absolute;
+top:50%;
+left: 50%;
+transform: translate(-50%,-50%);
+color: white;
+font-family: sans-serif;
+width: 300px;
+font-size: 30px;
+}.quotebox{
+    position:relative
+}@media screen and(max-width:400px){
+    nav ul li{
+        font-size:1px ;
+    
+    }
+}.order{
+    padding: 10px;
+    width:50%;
+    background-color:rgb(40, 40, 105);
+    text-align: center;
+}.order a{
+    text-decoration: none;
+    color: wheat;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+}.order ion-icon{
+    color:wheat
+}.add-cart{
+    text-decoration: none;
+color:gold
+}.boom{width:   100px;
+    background-color: rgb(40, 40, 105);
+}.boom ion-icon{
+    color:gold
+}.pop{
+    position: fixed;
+    top:50%;
+left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    transition: 200ms ease-in-out;
+    border:1px solid ;
+    z-index: 10;
+    background-color: wheat;
+}.pop.active{
+    transform: translate(-50%,-50%) scale(1);
+}
+.mode{
+    margin: 10px;
+}#overlay{
+    position:fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:rgba(0,0,0, .5);
+    pointer-events: none;
+}#overlay.active{
+    opacity: 1;
+    pointer-events: all;
+}.pop-header{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: end;
+}
+.close-button{
+    background: none;
+    border: none;
+    font-size:1.25rem;
+    cursor: pointer;
+    font-weight: bold;
+}
