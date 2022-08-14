@@ -1,4 +1,5 @@
 function generate(){
+    let play;
     var quotes={
         " – Donatella Versace" : '"Wear a fabulous smile, great jewelry and know that you are totally and utterly in control. "',
         " – Iris Apfel":'"Transformation, punch, individuality: One or all of the above are why you should wear jewelry."',
@@ -18,7 +19,8 @@ function generate(){
 
     document.querySelector('.quote').innerHTML=quote;
     document.querySelector('.author').innerHTML=author;
-    clearInterval();
-    setInterval("generate()",8000)
+    clearInterval(play)
+    play=setInterval("generate()",7000)
+    
 }
 generate()
