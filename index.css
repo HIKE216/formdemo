@@ -243,7 +243,6 @@ font-size: 30px;
 font-kerning:auto;
 background-color: black;
 opacity: 0.8;
-transition:800ms ease-in-out;
 font-style: italic;
 }.author{
     position: absolute;
