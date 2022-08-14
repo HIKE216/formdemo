@@ -259,7 +259,7 @@ function generate(){
 
     document.querySelector('.quote').innerHTML=quote;
     document.querySelector('.author').innerHTML=author;
-    setInterval("generate()",5000)
+    setInterval("generate()",7000)
 }
 
 generate()
