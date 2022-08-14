@@ -18,6 +18,7 @@ function generate(){
 
     document.querySelector('.quote').innerHTML=quote;
     document.querySelector('.author').innerHTML=author;
+    clearInterval();
     setInterval("generate()",8000)
 }
 generate()
