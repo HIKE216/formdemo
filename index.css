@@ -3,13 +3,13 @@ body{
     padding: 0;
 }.nav{
     position: fixed;
-    align-items:flex-end;
     background-color: transparent;
     overflow:hidden;
     padding: 30px;
     font-size: 20px;
     z-index:10;
     width: 100%;
+    
 transition: all 0.5s;}
 .nav.active{
     background-color: rgb(40, 40, 105);
@@ -20,23 +20,24 @@ transition: all 0.5s;}
 }@media (max-width:767.98px){
     .nav{
         position: fixed;
-    align-items:flex-end;
     background-color: transparent;
     overflow:hidden;
-    padding: 20px;
+    padding: 10px;
     font-size: 20px;
     z-index:10;
     width: 100%;
     }.nav.active{
         background-color: rgb(40, 40, 105);
-        overflow:hidden;
-        padding: 20px;
+        overflow: hidden;
+        z-index: 10;
+        padding: 10px;
         font-size: 20px;
         transition: all 0.5s;
+        
 }}
 #logo{
     position: fixed;
-    width: 67px;
+    width: 100px;
     margin-top: 1px;
     margin-left: 10px;
     z-index: 102;
@@ -47,9 +48,12 @@ transition: all 0.5s;}
     }
 }
  nav ul{
+    display: flex;
     padding-right: 20px;
-    margin: 0 0 0 150px;
+    margin: 0;
     list-style: none;
+    justify-content: end;
+    top:0;
 align-items: center;}
     .header ul{
         display: flex;
@@ -60,10 +64,14 @@ align-items: center;}
 }
 @media (max-width:767.98px){
     nav ul{
+        display: flex;
         padding-right: 20px;
         margin:0;
         list-style: none;
         align-items: center;
+        top:0;
+        justify-content: end;
+        
         
     }.header ul{
         display: flex;
@@ -73,14 +81,15 @@ align-items: center;}
         align-items: flex-end;
 }}
 nav ul li{
-    float: right;
-    background-position: 100% .4em;
+    display: inline-flex;
+    align-items: flex-end;
     padding-right: 10px;
     
 }@media (max-width: 767.98px){
     nav ul li {
         align-items: flex-end;
-        
+        display: inline-flex;
+
     };
 }
 nav ul li a{
@@ -102,18 +111,34 @@ object-fit:cover;
 }.cont{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
+        font-family: garamond;
+        font-size: 30px;
+        font-style: italic;
+        margin: 10px;
+        width:100%;}
+@media (max-width: 767.98px){
+
+.cont{
+    padding-left: 30px;
+align-content: center;
     font-family: garamond;
     font-size: 30px;
     font-style: italic;
     margin: 10px;
+    width:100%;}
 }.cont2{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top:130px;
+    margin-top:185px;
 position: absolute;
 font-size: 20px;}
+@media (max-width: 767.98px){
+    .cont2{
+        margin-top: 100px;
+    }
+}
 .ring{
     position: relative;
     margin: 10px;
@@ -232,7 +257,7 @@ form{
     overflow-x: auto;
     white-space: nowrap;
     z-index: 101;
-    margin-top: 85px;
+    margin-top: 135px;
     width: 100%;
     
     
@@ -284,7 +309,6 @@ transition: .1s ease-in-out;
 }
 .index{
     background-image: url(./gold.jpg);
-    width:fit-content;
     overflow-x: hidden;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -327,7 +351,7 @@ font-style:italic;
     }
 }
 .quotebox{
-    position:relative
+    position:relative;
 }.order{
     padding: 10px;
     width:50%;
@@ -403,16 +427,18 @@ left: 50%;
     width: 300px;
     height: 500px;
     overflow-x:hidden ;
-}@media(max-width: 300px){
+}@media(max-width: 726px){
 .swiper{
-    width:200px
+    display: flex;
+    width:400px;
+    justify-content: center;
 }
 }
 .swiper-slide img{
-    object-fit: cover;
+    
     width:100%;
     height: 500px;
-}@media (max-width: 300px){
+}@media (max-width: 726px){
 .swiper-slide img{
     width:80%
 }
@@ -441,5 +467,18 @@ left: 50%;
 }@media (max-width: 767.98px){
  .h1{
     width:100%
- }
+ }.quotes{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: rgb(231, 201, 33);
+    font-family: sans-serif;
+    width: 243px;
+    font-size: 30px;
+    font-kerning:auto;
+    background-color: black;
+    opacity: 0.8;
+    font-style: italic;
+    z-index: 9;}
 }
