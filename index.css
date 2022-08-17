@@ -30,7 +30,7 @@ transition: all 0.5s;}
     }.nav.active{
         background-color: rgb(40, 40, 105);
         overflow:hidden;
-        padding: 35px;
+        padding: 20px;
         font-size: 20px;
         transition: all 0.5s;
 }}
@@ -154,11 +154,15 @@ font-size: 20px;}
     display: flex;
 }.cart-cont{
     width:620px;
+    margin-top:130px;
+position: absolute;
+    
     
     
 }@media (max-width: 767.98px){
     .cart-cont{
         width:100%;
+        margin-top: 100px
         
     };
 }
@@ -433,5 +437,9 @@ left: 50%;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: italic;
     font-weight: lighter;
-    font-size: 40px;
+    font-size: 20px;
+}@media (max-width: 767.98px){
+ .h1{
+    width:100%
+ }
 }
