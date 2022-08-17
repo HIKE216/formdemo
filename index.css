@@ -1,45 +1,85 @@
 body{
     margin: 0;
     padding: 0;
-}nav{
+}.nav{
+    position: fixed;
+    align-items:flex-end;
+    background-color: transparent;
+    overflow:hidden;
+    padding: 30px;
+    font-size: 20px;
+    z-index:10;
+    width: 100%;
+transition: all 0.5s;}
+.nav.active{
     background-color: rgb(40, 40, 105);
     overflow:hidden;
-    padding: 38px;
+    padding: 35px;
     font-size: 20px;
+    transition: all 0.5s;
 }@media (max-width:767.98px){
-    nav{
-        padding: 10px;
-    }
-}
+    .nav{
+        position: fixed;
+    align-items:flex-end;
+    background-color: transparent;
+    overflow:hidden;
+    padding: 20px;
+    font-size: 20px;
+    z-index:10;
+    width: 100%;
+    }.nav.active{
+        background-color: rgb(40, 40, 105);
+        overflow:hidden;
+        padding: 35px;
+        font-size: 20px;
+        transition: all 0.5s;
+}}
 #logo{
-    position: absolute;
-    width: 75px;
+    position: fixed;
+    width: 67px;
     margin-top: 1px;
     margin-left: 10px;
+    z-index: 102;
 }@media (max-width:767.98px){
     #logo{
-        position: absolute;
-        width:30px;
+        position: fixed;
+        width:45px;
     }
 }
- nav ul,.header ul{
-    padding: 0;
+ nav ul{
+    padding-right: 20px;
     margin: 0 0 0 150px;
     list-style: none;
+align-items: center;}
+    .header ul{
+        display: flex;
+        padding: 0;
+        margin: 0 0 0 150px;
+        list-style: none;
+    
 }
 @media (max-width:767.98px){
-    nav ul,.header ul{
+    nav ul{
+        padding-right: 20px;
+        margin:0;
+        list-style: none;
+        align-items: center;
+        
+    }.header ul{
+        display: flex;
         padding: 0;
         margin:0;
         list-style: none;
-    }
-}
+        align-items: flex-end;
+}}
 nav ul li{
+    float: right;
+    background-position: 100% .4em;
+    padding-right: 10px;
     
-    float:right;
 }@media (max-width: 767.98px){
     nav ul li {
-        align-self: flex-start;
+        align-items: flex-end;
         
     };
 }
@@ -57,7 +97,7 @@ nav ul li a{
 .shop{
 object-fit:cover;
     width: 100%;
-    height: 250px;
+    height: 500px;
     
 }.cont{
     display: flex;
@@ -66,12 +106,15 @@ object-fit:cover;
     font-family: garamond;
     font-size: 30px;
     font-style: italic;
+    margin: 10px;
 }.cont2{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    margin-top:130px;
+position: absolute;
 font-size: 20px;}
 .ring{
-    width:150px;
     position: relative;
     margin: 10px;
 }.box{
@@ -180,25 +223,36 @@ form{
 }
 .header{
     background-color: mistyrose;
+    position: fixed;
+    overflow-y: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+    z-index: 101;
+    margin-top: 85px;
+    width: 100%;
+    
     
 }@media (max-width: 767.98px){
     .header{
+        position: fixed;
         overflow-y: hidden;
         overflow-x: auto;
-        white-space: nowrap;
+        margin-top: 63px;
     };
 }
 .header ul li{
-    display: inline-block;
-    width: 25%;
     padding: auto;
     margin: 10px;
+    float: left;
+    white-space: nowrap;
     
 }@media (max-width: 767.98px){
     .header ul li{
-        width:30%;
+        display:inline-flex ;
+        width:100%;
         padding: 0;
-        margin: 10px
+        margin: 10px;
+        white-space:nowrap ;
         
     };
 }
@@ -226,8 +280,10 @@ transition: .1s ease-in-out;
 }
 .index{
     background-image: url(./gold.jpg);
-    width: 100%;
-    
+    width:fit-content;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }.cont a img:hover{
     border: 2px solid blue;
 }
@@ -337,4 +393,45 @@ left: 50%;
     font-size:1.25rem;
     cursor: pointer;
     font-weight: bold;
+}
+.swiper{
+    display: flex;
+    width: 300px;
+    height: 500px;
+    overflow-x:hidden ;
+}@media(max-width: 300px){
+.swiper{
+    width:200px
+}
+}
+.swiper-slide img{
+    object-fit: cover;
+    width:100%;
+    height: 500px;
+}@media (max-width: 300px){
+.swiper-slide img{
+    width:80%
+}
+}
+.quotes{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: rgb(231, 201, 33);
+    font-family: sans-serif;
+    width: 300px;
+    font-size: 30px;
+    font-kerning:auto;
+    background-color: black;
+    opacity: 0.8;
+    font-style: italic;
+    z-index: 9;}
+.h1{
+    display: flex;
+    justify-content: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 40px;
 }

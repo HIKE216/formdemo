@@ -24,3 +24,15 @@ function generate(){
     
 }
 generate()
+
+const header=document.querySelector(".nav");
+
+window.addEventListener("scroll", function () {
+    var top=window.scrollY;
+    console.log(top)
+    if(top>=5){
+        header.classList.add('active')
+    }else{
+        header.classList.remove('active')
+    }
+}, false);

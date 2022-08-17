@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daisy's accessories</title>
     <link rel="stylesheet" href="index.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
 </head>
 <body class="index">
-        <img id="logo" src="./Daisy logo (2).png">
-        <nav>
+    <img id="logo" src="./Daisy logo (2).png">
+        <nav class="nav">
         <ul>
             <li class="cart"><a href="cart.html"><ion-icon name="cart"></ion-icon>Cart<span>0</span></a></li>
             <li><a href="#"> Contact</a></li>
@@ -18,18 +22,125 @@
         </ul>
     </nav><div class="quotebox">
     <img class="shop" src="./diamond.jpeg"><div class="quote">"You cant buy happinesss,but you can buy jewelry and that's kind of the same"</div><div class="author">-Garden of the Sun</div></div>
+    <div class="h1">YOU KNOW YOU WANT THAT LUXURY....GO GRAB IT</div>
     <div class="cont">
-        <div class="ring"><a href="rings.html"><img class="box" src="./ring.jpg"></a>Rings</div>
-        <div class="ring"><a href="sets.html"><img class="box" src="./Dewdrop Earrings or Pendant_ Easy DIY beaded Earrings _ How to make beaded Earrings.png"></a>Earings and Necklace</div>
-        <div class="ring"><a href="bracelets.html"><img class="box" src="./brimg.jpg"></a>Bracelets</div>
-        <div class="ring"><a href="necklaces.html"><img class="box" src="./neckimg.jpg"></a>Necklaces</div>
-        <div class="ring"><a href="anklets.html"><img class="box" src="./je.jpg"></a>Anklets</div>
-        <div class="ring"><a href="cufflinks.html"><img class="box" src="./Casablanca Cufflinks - V15.jpg"></a>Cufflinks</div>
+        <div class="ring"><a href="rings.html">
+            <div class="swiper">
+                
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="ringpic1.png"></div>
+                  <div class="swiper-slide"><img src="ringpic2.png"></div>
+                  
+                  
+                </div>
+                
+                <div class="swiper-pagination"></div>
+    
+              </div>
+        </a><div class="quotes">Rings</div></div>
+        <div class="ring"><a href="sets.html">
+            <div class="swiper">
+                
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="eneck.jpg"></div>
+                  <div class="swiper-slide"><img src="eneck1.jpg"></div>
+                  <div class="swiper-slide"><img src="eneck2.jpg"></div>
+                  
+                  
+                </div>
+                
+                <div class="swiper-pagination"></div>
+    
+              </div>
+        </a><div class="quotes">Earrings and Necklace</div></div>
+        <div class="ring"><a href="bracelets.html">
+            <div class="swiper">
+                
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="bracpic1.jpg"></div>
+                  <div class="swiper-slide"><img src="bracpic2.jpg"></div>
+                  <div class="swiper-slide"><img src="brimg.jpg"></div>
+                  
+                  
+                </div>
+                
+                <div class="swiper-pagination"></div>
+    
+              </div>
+        </a><div class="quotes">Bracelets</div></div>
+        <div class="ring"><a href="necklaces.html">
+            <div class="swiper">
+                
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="neckpic.jpg"></div>
+                  <div class="swiper-slide"><img src="neckpic2.jpg"></div>
+                  
+                  
+                </div>
+                
+                <div class="swiper-pagination"></div>
+    
+              </div>
+        </a><div class="quotes">Necklaces</div></div>
+        <div class="ring"><a href="anklets.html">
+            <div class="swiper">
+                
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="ankletpic.jpg"></div>
+                  <div class="swiper-slide"><img src="ankletpic1.jpg"></div>
+                  
+                  
+                </div>
+                
+                <div class="swiper-pagination"></div>
+    
+              </div>
+        </a><div class="quotes">Anklets</div></div>
+        <div class="ring"><a href="cufflinks.html">
+            <div class="swiper">
+                
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="Casablanca Cufflinks - V15.jpg"></div>
+                  <div class="swiper-slide"><img src="cuff1.jpg"></div>
+                  <div class="swiper-slide"><img src="cuff3.jpg"></div>
+        
+                  
+                  
+                </div>
+                
+                <div class="swiper-pagination"></div>
+    
+              </div>
+        </a><div class="quotes">Cufflinks</div></div>
     </div>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="index.js"></script>
 <script src="quote.js"></script>
+<script src="index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+
+const swiper = new Swiper('.swiper', {
+autoplay:{
+    delay:4000,
+    disableOnInteraction:false
+},
+
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
+</script>
 </body>
 </html>
