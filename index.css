@@ -17,6 +17,7 @@ transition: all 0.5s;}
     padding: 35px;
     font-size: 20px;
     transition: all 0.5s;
+    width: 100%;
 }@media (max-width:767.98px){
     .nav{
         position: fixed;
@@ -33,7 +34,7 @@ transition: all 0.5s;}
         padding: 10px;
         font-size: 20px;
         transition: all 0.5s;
-        
+        width: 100%;
 }}
 #logo{
     position: fixed;
@@ -52,7 +53,7 @@ transition: all 0.5s;}
     padding-right: 20px;
     margin: 0;
     list-style: none;
-    justify-content: end;
+    justify-content:flex-end;
     top:0;
 align-items: center;}
     .header ul{
@@ -70,7 +71,7 @@ align-items: center;}
         list-style: none;
         align-items: center;
         top:0;
-        justify-content: end;
+        justify-content: flex-end;
         
         
     }.header ul{
