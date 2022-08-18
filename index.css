@@ -65,14 +65,13 @@ align-items: center;}
 }
 @media (max-width:767.98px){
     nav ul{
-        display: flex;
-        padding-right: 5px;
-        margin:0;
+        text-align: right;
+        
         list-style: none;
         align-items: center;
         top:0;
-        justify-content: flex-end;
-        padding-left: 10px;
+        justify-content: fle;
+        padding-left: 20px;
         
     }.header ul{
         display: flex;
@@ -88,7 +87,6 @@ nav ul li{
     
 }@media (max-width: 767.98px){
     nav ul li {
-        align-items: flex-end;
         display: inline-flex;
 padding-right: 0
     };
@@ -368,7 +366,8 @@ font-style:italic;
 }.add-cart{
     text-decoration: none;
 color:gold
-}.boom{width:   150px;
+}
+.boom{width:   150px;
     background-color: rgb(40, 40, 105);
     margin-left: 5px;
     border-radius: 50px;
@@ -382,6 +381,8 @@ color:gold
 }@media(max-width:800px){
     .boom{
         width:130px
+    }.boom a{
+        font-size: 15px;
     }
 }
 .pop{
