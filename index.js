@@ -1,4 +1,3 @@
-
 var image=[];
 let products=[
     {
@@ -279,5 +278,4 @@ function closePop(pop){
     pop.classList.remove('active')
     overlay.classList.remove('active')
 }
-
 form()

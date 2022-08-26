@@ -1,10 +1,22 @@
+html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 body{
     margin: 0;
     padding: 0;
-}.nav{
+    height: 100%;
+}#container{
+    min-height: 100%;
+}
+main{
+    overflow: auto;
+    padding-bottom:100px ;
+}
+.nav{
     position: fixed;
     background-color: transparent;
-    overflow:hidden;
     padding: 30px;
     font-size: 20px;
     z-index:10;
@@ -14,7 +26,7 @@ transition: all 0.5s;}
 .nav.active{
     background-color: rgb(40, 40, 105);
     overflow:hidden;
-    padding: 35px;
+    padding: 32px;
     font-size: 20px;
     transition: all 0.5s;
     width: 100%;
@@ -128,10 +140,10 @@ align-content: center;
     width:100%;}
 }.cont2{
     display: flex;
+    position: relative;
     flex-wrap: wrap;
+    margin-top: 170px;
     justify-content: center;
-    margin-top:185px;
-position: absolute;
 font-size: 20px;}
 @media (max-width: 767.98px){
     .cont2{
@@ -256,7 +268,7 @@ form{
     overflow-x: auto;
     white-space: nowrap;
     z-index: 101;
-    margin-top: 135px;
+    margin-top: 125px;
     width: 100%;
     
     
@@ -483,4 +495,54 @@ left: 50%;
     opacity: 0.8;
     font-style: italic;
     z-index: 9;}
+}.flip.active{
+    background-color:black;
+    color:gold;
+    width:50%;
+    height:50px;
+    z-index: 2000;
+}#overmuch{
+    position:fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:rgba(0,0,0, .5);
+    pointer-events: none;
+}#overmuch.active{
+    opacity: 1;
+    pointer-events: all;
+    z-index: 5000;
+}#footer{
+    position: relative;
+    margin-top: -100px;
+    bottom: 0;
+    left: 0;
+    width:100%;
+    background-color:wheat;
+    color: black;
+height: 100px;
+font-size: 20px;
+text-align: center;
+clear: both;
+}#footer a{
+    font-size: 50px;
+    text-decoration: none;
+    color: black;
+}.move{
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}@media (max-width: 767.98px){
+    .move ion-icon{
+        font-size:20px
+    }
+}
+input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+input[type=number]{
+    -moz-appearance: textfield;
 }

@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body class="index">
+    <div id="container">
+        <main>
     <img id="logo" src="./Daisy logo (2).png">
         <nav class="nav active">
         <ul>
             <li><a href="index.html">Home</a></li>
-          <li><a href="#"> Shop</a></li>
-          <li><a href="#"> Contact</a></li>
+          <li><a href="footer"> Contact</a></li>
           <li class="cart"><a href="cart.html"><ion-icon name="cart"></ion-icon>Cart<span>0</span></a></li>  
         </ul>
     </nav>
@@ -45,16 +46,22 @@
         <input type="text" name="_honey" style="display:none;">
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_next" value="https://hike216.github.io/formdemo/success.html">
-        <div class="mode">Name<input type="text" name="name"></div>
-        <div class="mode">Email <input type="text" name="email"></div>
-        <div class="mode">Phone no.<input type="number" name="number"></div>
-        <div class="mode">Delivery point<input type="text" name="Delivery point"></div>
+        <div class="mode">Name<input type="text" name="name" required></div>
+        <div class="mode">Email <input type="text" name="email" required></div>
+        <div class="mode">Phone no.<input type="number" name="Phone no." required></div>
+        <div class="mode">Delivery location<input type="text" name="Delivery point" required></div>
         <div style="display: none;">Products ordered <textarea class="ordered" name="image" readonly></textarea></div>
         <div style="display: none;">Quantity ordered<input type="text" name="quantity-ordered" class="order2" readonly></div>
         <div class="mode">Total Cost<input type="text" name="totalCost" class="totalCost" readonly></div>
         <button type="submit">Send</button>
     </form>
 </div>
+</main>
+</div>
+<div id="footer">
+    <div>Contact us  <div>daisyaccessories@gmail.com</div></div>
+    <div class="move"> <a href="https://instagram.com/daisyaccessories2022?igshid=YmMyMTA2M2Y="><span><ion-icon name="logo-instagram"></ion-icon></span></a></div>
+  </div>
 <div id="overlay"></div>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
